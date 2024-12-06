@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+.intro_section {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: rgb(78, 78, 78);
+}
+
+.parallax-img {
+  top: 65px;
+  height: 400px;
+}
+
+.card-text {
+  margin: auto;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  padding: 20px;
+  text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.bgimg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dropbtn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .di {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content .di:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #cecece;
+  color: black;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 733px) {
+  .card-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .parallax-img {
+    height: 300px;
+  }
+
+  .card-text {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .dropbtn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
